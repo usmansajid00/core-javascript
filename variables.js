@@ -47,3 +47,17 @@ console.log(deepCopy);
 // How do you use destructuring to extract name and age from the person object into separate variables?
 const { name1, age1 } = person;
 console.log(name1, age1);
+// How do you add a new property to the person object with a name stored in a variable propertyName and a value 42?
+person.propertyName = 42;
+console.log(person);
+// How do you write a function that returns another function creating a closure, demonstrating the block scope of let and const?
+const fun1 = () => {
+  let army = "pakArmy";
+  const fun2 = () => {
+    let service = `${army} had guns`;
+    console.log(service);
+  };
+  return fun2;
+};
+const myFun2 = fun1();
+myFun2();
