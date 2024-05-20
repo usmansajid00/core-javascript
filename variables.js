@@ -61,3 +61,9 @@ const fun1 = () => {
 };
 const myFun2 = fun1();
 myFun2();
+// Write a function that takes two numbers as arguments and returns their sum.
+const sumOfTwo = (num1, num2) => {
+  const num3 = num1 + num2;
+  console.log(num3);
+};
+sumOfTwo(10, 20);
