@@ -67,3 +67,12 @@ const sumOfTwo = (num1, num2) => {
   console.log(num3);
 };
 sumOfTwo(10, 20);
+// Write a function that takes two numbers as arguments and returns true if the first number is greater than the second, and false otherwise.
+const comparison = (a, b) => {
+  if (a > b) {
+    console.log(true);
+  } else {
+    console.log(false);
+  }
+};
+comparison(4, 7);
