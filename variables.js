@@ -76,3 +76,18 @@ const comparison = (a, b) => {
   }
 };
 comparison(4, 7);
+// Write a function that takes two arrays as arguments and returns true if they contain the same elements (in any order) and false otherwise.
+const sameElements = (c, d) => {
+  if (c.length === d.length) {
+    for (let i = 0; i < c.length; i++) {
+      if (c[i] === d[i]) {
+        console.log(true);
+      } else {
+        console.log(false);
+      }
+    }
+  } else {
+    console.log(false);
+  }
+};
+sameElements([1, 2, 3], [1, 2, 3]);
